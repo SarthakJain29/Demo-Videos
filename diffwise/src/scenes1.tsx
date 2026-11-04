@@ -32,7 +32,7 @@ export const Problem: React.FC = () => {
               <div key={t} style={{opacity: p, transform: `translateX(${(1 - p) * 60}px)`, display: "flex", alignItems: "center", gap: 14,
                 background: C.surface, border: `1px solid ${C.line}`, borderRadius: 14, padding: "16px 20px", marginBottom: 14}}>
                 <svg width="22" height="22" viewBox="0 0 16 16" fill={C.mint}><path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.12v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354Z" /></svg>
-                <span style={{fontFamily: F.mono, fontSize: 20, color: C.text, flex: 1}}>{t}</span>
+                <span style={{fontFamily: F.mono, fontSize: 18, color: C.text, flex: 1, whiteSpace: "nowrap"}}>{t}</span>
                 <Pill color={c as string}>{a}</Pill>
               </div>
             );
