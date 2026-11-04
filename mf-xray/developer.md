@@ -31,7 +31,7 @@ See `.env.example`: `GEMINI_API_KEY` (only for `npm run voice`), optional `GEMIN
 - `gemini-3.8-flash-lite-tts` read the style prefix aloud, so the prefix is now empty by default.
 
 ## Progress
-**Done:** scaffold, brand, 9 scenes (wide + vertical), script, Gemini narration, wide MP4 render, README.
+**Done:** scaffold, brand, 9 scenes (wide + vertical), script, Gemini narration, wide + vertical MP4 renders, README.
 **Known:** narration mixes two Gemini TTS models (free daily quota hit); same voice name, slight prosody difference. Regenerate with `npm run voice` when quota resets for a uniform take.
-**In progress:** vertical render + PR.
+**In progress:** PR review.
 **Next:** PR.
