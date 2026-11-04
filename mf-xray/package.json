@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "studio": "remotion studio src/index.ts",
-    "render": "remotion render src/index.ts MFXrayWide out/mf-xray-demo-1920x1080.mp4 --crf=26",
-    "render:vertical": "remotion render src/index.ts MFXrayVertical out/mf-xray-demo-1080x1920.mp4 --crf=26",
+    "render": "remotion render src/index.ts MFXrayWide out/mf-xray-demo-1920x1080.mp4 --crf=26 --concurrency=4",
+    "render:vertical": "remotion render src/index.ts MFXrayVertical out/mf-xray-demo-1080x1920.mp4 --crf=26 --concurrency=4",
     "voice": "node scripts/tts.mjs"
   },
   "dependencies": {

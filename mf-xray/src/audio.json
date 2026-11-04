@@ -1,11 +1,11 @@
 {
-  "hook": 4.65,
-  "upload": 5.61,
-  "privacy": 8.28,
-  "xirr": 7.25,
-  "overlap": 7.25,
-  "cost": 11.32,
+  "hook": 4.69,
+  "upload": 6.21,
+  "privacy": 7.45,
+  "xirr": 6.89,
+  "overlap": 8,
+  "cost": 10.01,
   "explain": 5.32,
-  "chat": 5.45,
+  "chat": 6.52,
   "cta": 5.29
 }
