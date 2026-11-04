@@ -22,11 +22,11 @@ export const TOTAL = scenes.reduce((a, s) => a + s.frames, 0);
 
 export const Diffwise: React.FC<{vertical?: boolean}> = ({vertical}) => {
   let from = 0;
-  const scale = vertical ? 0.72 : 1;
+  const scale = vertical ? 0.68 : 1;
   return (
     <AbsoluteFill style={{background: C.ink}}>
       <Background />
-      <AbsoluteFill style={vertical ? {top: 380, height: 1080 * scale + 100, overflow: "hidden", alignItems: "center", justifyContent: "center"} : undefined}>
+      <AbsoluteFill style={vertical ? {overflow: "hidden", alignItems: "center", justifyContent: "center"} : undefined}>
         <div style={{width: 1920, height: 1080, position: "relative", transform: `scale(${scale})`, flexShrink: 0}}>
           {scenes.map((s) => {
             const start = from; from += s.frames;
@@ -46,7 +46,7 @@ export const Diffwise: React.FC<{vertical?: boolean}> = ({vertical}) => {
           return (
             <Sequence key={s.id} from={start} durationInFrames={s.frames}>
               {s.hasAudio && HAS_AUDIO && <Sequence from={LEAD}><Audio src={staticFile(`audio/${s.id}.wav`)} /></Sequence>}
-              <AbsoluteFill style={{justifyContent: "flex-end", alignItems: "center", paddingBottom: vertical ? 300 : 56, ...(vertical ? {justifyContent: "flex-start", paddingTop: 1560} : {})}}>
+              <AbsoluteFill style={{justifyContent: "flex-end", alignItems: "center", paddingBottom: vertical ? 300 : 56, ...(vertical ? {justifyContent: "flex-start", paddingTop: 1380} : {})}}>
                 <Caption text={s.text} dur={s.frames - LEAD - 15} start={LEAD} vertical={vertical} />
               </AbsoluteFill>
             </Sequence>
@@ -54,7 +54,7 @@ export const Diffwise: React.FC<{vertical?: boolean}> = ({vertical}) => {
         });
       })()}
       {vertical && (
-        <AbsoluteFill style={{justifyContent: "flex-start", alignItems: "center", paddingTop: 110, flexDirection: "row", gap: 20, height: 200}}>
+        <AbsoluteFill style={{paddingTop: 150, flexDirection: "row", justifyContent: "center", alignItems: "flex-start", gap: 20, height: 260}}>
           <Logo size={64} /><span style={{fontFamily: F.display, fontWeight: 700, fontSize: 56, color: C.text}}>Diffwise</span>
         </AbsoluteFill>
       )}
