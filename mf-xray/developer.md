@@ -27,9 +27,11 @@ See `.env.example`: `GEMINI_API_KEY` (only for `npm run voice`), optional `GEMIN
 
 ## Blockers & workarounds
 - Google Fonts blocked in headless Chromium (TLS via proxy) -> self-hosted fonts.
-- Gemini TTS free-tier quota (429) hit intermittently -> backoff + retry in `scripts/tts.mjs`; first pass had mixed models so it was re-run with a single model.
+- Gemini TTS free tier allows only 10 requests/day per model. The quota ran out mid-way, so the committed narration mixes `gemini-2.5-flash-preview-tts` (hook/upload/privacy/xirr/cost/cta) and `gemini-3.1-flash-tts-preview` (overlap/explain/chat) with the same voice (Kore). Fix: after the daily quota resets, run `npm run voice` (single model) and `node scripts/measure.mjs`, then re-render.
+- `gemini-3.8-flash-lite-tts` read the style prefix aloud, so the prefix is now empty by default.
 
 ## Progress
-**Done:** project scaffold, brand, all 9 scenes (wide+vertical compositions), script, TTS.
-**In progress:** final render, vertical cut check.
+**Done:** scaffold, brand, 9 scenes (wide + vertical), script, Gemini narration, wide MP4 render, README.
+**Known:** narration mixes two Gemini TTS models (free daily quota hit); same voice name, slight prosody difference. Regenerate with `npm run voice` when quota resets for a uniform take.
+**In progress:** vertical render + PR.
 **Next:** PR.
