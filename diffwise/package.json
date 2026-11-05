@@ -7,7 +7,10 @@
     "render": "remotion render src/index.ts Diffwise out/diffwise-1080p.mp4 --crf=26",
     "render:vertical": "remotion render src/index.ts DiffwiseVertical out/diffwise-vertical.mp4 --crf=26",
     "still": "remotion still src/index.ts Diffwise out/thumbnail.png --frame=1100",
-    "tts": "node scripts/tts.mjs"
+    "tts": ".venv/bin/python scripts/kokoro_tts.py",
+    "tts:setup": "uv venv --python 3.12 .venv && uv pip install --python .venv/bin/python kokoro soundfile numpy torch --extra-index-url https://download.pytorch.org/whl/cpu --index-strategy unsafe-best-match",
+    "tts:samples": ".venv/bin/python scripts/kokoro_tts.py --sample af_heart af_bella bm_george",
+    "tts:gemini": "node scripts/tts.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "5.3.0",

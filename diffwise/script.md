@@ -1,6 +1,6 @@
 # Diffwise — Voiceover script
 
-Narration is generated from `scripts/narration.json` (the source of truth; this file mirrors it). Voice: Gemini TTS, "Kore".
+Narration is generated locally with Kokoro-82M from `scripts/narration.json` (the source of truth; this file mirrors it). Voice: `af_heart`.
 
 | # | Scene | Narration |
 |---|---|---|
