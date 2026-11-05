@@ -1,6 +1,6 @@
-# MF X-ray — voiceover script (~65 s)
+# MF X-ray — voiceover script (~72 s)
 
-Voice: Gemini TTS, voice **Kore** (model `gemini-2.5-flash-preview-tts`), prompt prefix "warm, upbeat product-demo narrator". Source of truth: `src/script.json` (captions are generated from it).
+Voice: local Kokoro-82M, voice **af_heart** (`npm run voice`). Optional alternative: Gemini TTS (`npm run voice:gemini`). Source of truth: `src/script.json` (captions are generated from it; the optional `tts` field holds phonetic spellings).
 
 | # | Scene | Narration | On screen |
 |---|---|---|---|

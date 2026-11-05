@@ -6,7 +6,9 @@
     "studio": "remotion studio src/index.ts",
     "render": "remotion render src/index.ts MFXrayWide out/mf-xray-demo-1920x1080.mp4 --crf=26 --concurrency=4",
     "render:vertical": "remotion render src/index.ts MFXrayVertical out/mf-xray-demo-1080x1920.mp4 --crf=26 --concurrency=4",
-    "voice": "node scripts/tts.mjs"
+    "voice": "PYTHONWARNINGS=ignore .venv-tts/bin/python scripts/tts_kokoro.py --voice af_heart && bash scripts/normalize.sh && node scripts/measure.mjs",
+    "voice:setup": "bash scripts/setup-tts.sh",
+    "voice:gemini": "node scripts/tts.mjs && node scripts/measure.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.250",

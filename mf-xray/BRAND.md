@@ -28,7 +28,7 @@
 Springy word-by-word kinetic headlines, numbers that count up, charts that draw left to right, one teal scan-line sweep as the recurring "x-ray" motif, soft fades between scenes.
 
 ## Voice
-Warm, upbeat Gemini voice "Kore" (see `script.md`). Captions are burned in for sound-off viewing.
+Warm, natural Kokoro voice "af_heart" (see `script.md`). Captions are burned in for sound-off viewing.
 
 ## Name suggestion
 "MF X-ray" is clear and memorable but "MF" is jargon for beginners and X-ray is also an X (Twitter) pun risk. A friendlier alternative: **"FundLens"** (or "Paisa X-ray"): no abbreviation, still the see-through idea, easy to say in Hindi/English. The video uses **MF X-ray** as requested. Verify trademark/domain availability before adopting.

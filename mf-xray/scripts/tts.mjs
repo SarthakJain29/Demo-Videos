@@ -1,4 +1,5 @@
 // Generates per-scene narration with Gemini TTS -> public/vo/<id>.wav and src/audio.json (durations).
+// OPTIONAL alternative to the default local Kokoro narration (npm run voice). Free-tier quota is very small.
 // Usage: GEMINI_API_KEY=... npm run voice
 import { execFileSync } from "node:child_process";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";

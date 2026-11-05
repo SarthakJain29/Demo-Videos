@@ -1,11 +1,49 @@
 [
-  {"id":"hook","text":"You own five mutual funds. But do you know what you actually own?","min":5.5},
-  {"id":"upload","text":"Meet M F X-ray. Just drop in your CAMS or KFintech statement.","min":5.5},
-  {"id":"privacy","text":"It's read right inside your browser. Nothing is uploaded. Nothing is stored. Your data never leaves your device.","min":7},
-  {"id":"xirr","text":"First, your true return. X I R R accounts for when you invested, so it's the honest number.","min":7},
-  {"id":"overlap","text":"Then, overlap. Your five funds may secretly hold the same stocks. Now you can see it.","min":7},
-  {"id":"cost","text":"And hidden costs. A small expense ratio can quietly eat lakhs over twenty years. We even check if you're in a regular plan, when direct would do.","min":9},
-  {"id":"explain","text":"Every term is explained in plain language, and your goals are tracked, too.","min":6},
-  {"id":"chat","text":"Still curious? Just ask. Chat about your own portfolio, in your own words.","min":6.5},
-  {"id":"cta","text":"M F X-ray. Know what you own. Educational, not investment advice.","min":6}
+  {
+    "id": "hook",
+    "text": "You own five mutual funds. But do you know what you actually own?",
+    "min": 5.5
+  },
+  {
+    "id": "upload",
+    "text": "Meet M F X-ray. Just drop in your CAMS or KFintech statement.",
+    "min": 5.5,
+    "tts": "Meet M F X-ray. Just drop in your CAMS or K Fin Tech statement."
+  },
+  {
+    "id": "privacy",
+    "text": "It's read right inside your browser. Nothing is uploaded. Nothing is stored. Your data never leaves your device.",
+    "min": 7
+  },
+  {
+    "id": "xirr",
+    "text": "First, your true return. X I R R accounts for when you invested, so it's the honest number.",
+    "min": 7,
+    "tts": "First, your true return. X I R R accounts for when you invested, so it's the honest number."
+  },
+  {
+    "id": "overlap",
+    "text": "Then, overlap. Your five funds may secretly hold the same stocks. Now you can see it.",
+    "min": 7
+  },
+  {
+    "id": "cost",
+    "text": "And hidden costs. A small expense ratio can quietly eat lakhs over twenty years. We even check if you're in a regular plan, when direct would do.",
+    "min": 9
+  },
+  {
+    "id": "explain",
+    "text": "Every term is explained in plain language, and your goals are tracked, too.",
+    "min": 6
+  },
+  {
+    "id": "chat",
+    "text": "Still curious? Just ask. Chat about your own portfolio, in your own words.",
+    "min": 6.5
+  },
+  {
+    "id": "cta",
+    "text": "M F X-ray. Know what you own. Educational, not investment advice.",
+    "min": 6
+  }
 ]
