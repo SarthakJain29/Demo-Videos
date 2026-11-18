@@ -1,0 +1,38 @@
+[
+ {
+  "id": "problem",
+  "text": "Code review is where good teams slow down. Pull requests wait for hours, feedback varies by reviewer, and the same mistakes keep slipping through."
+ },
+ {
+  "id": "intro",
+  "text": "Meet Diffwise. An AI reviewer that lives inside your GitHub."
+ },
+ {
+  "id": "install",
+  "text": "Install the GitHub App on a repository in one click. No config files. No pipelines to maintain."
+ },
+ {
+  "id": "pr",
+  "text": "Then just open a pull request. Diffwise takes it from there."
+ },
+ {
+  "id": "pipeline",
+  "text": "GitHub sends a webhook, a job is queued, a worker fetches the diff, and an LLM reviews every changed line."
+ },
+ {
+  "id": "comments",
+  "text": "Within seconds, inline comments land on the pull request. A missing null check. A query open to injection. Each with a suggested fix."
+ },
+ {
+  "id": "dashboard",
+  "text": "A dashboard keeps the full history: every review, your settings, and exactly what you use."
+ },
+ {
+  "id": "roadmap",
+  "text": "Next: repo context with embeddings, per-tenant quotas, cost tracking, and monitoring at scale."
+ },
+ {
+  "id": "cta",
+  "text": "Diffwise. Reviews that never wait. Join the early access list today."
+ }
+]
